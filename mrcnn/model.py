@@ -2347,7 +2347,7 @@ class MaskRCNN():
         # Add custom callbacks to the list
         # if custom_callbacks is None:
         #     callbacks += custom_callbacks
-        if custom_callbacks is None:
+        if custom_callbacks is not None:
             callbacks = custom_callbacks
 
         # Train
